@@ -21,6 +21,6 @@ jobs:
       - name: Print Weather API Key
         run: echo ${{ secrets.WEATHER_API_KEY }}
       - name: Run Python file as testing
-        run: python hellowrold.py
+        run: python main.py
         env:
           WEATHER_API_KEY: ${{ secrets.WEATHER_API_KEY }}
