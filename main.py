@@ -1,5 +1,4 @@
-from week9_etl_exe import transform
+from week9_etl_exe import transform,load
 
 transform_df = transform()
-
-print(transform_df)
+load(transform_df)

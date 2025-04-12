@@ -87,3 +87,6 @@ def transform()-> pd.DataFrame:
         weather_city_covid_df = pd.merge(weather_df, city_covid_df, how='inner', on='city_name')
        
         return weather_city_covid_df
+
+def load(weather_city_covid_df:str):
+     weather_city_covid_df.to_csv('weather_city_covid_df.csv',index=False)
