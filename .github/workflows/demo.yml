@@ -19,4 +19,4 @@ jobs:
       - name: Install libraries
         run: pip install -r requirements.txt
       - name: Run Pyhton files as testing
-        run: python elloworld.py
+        run: python helloworld.py
